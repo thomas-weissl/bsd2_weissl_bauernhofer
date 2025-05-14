@@ -1,1 +1,0 @@
-# bsd2_weissl_bauernhofer
