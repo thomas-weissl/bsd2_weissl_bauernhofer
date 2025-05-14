@@ -7,7 +7,7 @@ Bauernhofer Simone
 
 
 ### Taskliste
-- [ ] Thomas: Branch maven 
+- [x] Thomas: Branch maven 
 - [ ] Simi: Branch readme
 - [ ] Thomas: Branch maven_Detail
 - [ ] Simi: Branch bug_hunt
