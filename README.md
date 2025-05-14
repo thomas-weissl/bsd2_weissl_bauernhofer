@@ -16,6 +16,7 @@ Der Code ist frei für alle Windows- sowie Mac-User [hier](https://github.com/th
 Die Zip-Datei einfach herunterladen, anschließend die Datei entpacken & in einer Entwicklungsumgebung, wie Eclipse oder IntelliJ, öffnen.
 
 ### Taskliste
+
 [x] Thomas: Branch maven 
 [x] Simi: Branch readme
 [x] Thomas: Branch maven_detail
