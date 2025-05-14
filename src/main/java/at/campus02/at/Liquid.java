@@ -1,7 +1,7 @@
 package at.campus02.at;
 // put into drinkss
 public class Liquid {
-    /
+
     private String name;
     // volume in l
      
