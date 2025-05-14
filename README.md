@@ -2,8 +2,7 @@
 
 ### Projekt: Gruppenübung
 #### Gruppenmitglieder: 
-Weissl Thomas
-Bauernhofer Simone
+Weissl Thomas, Bauernhofer Simone
 
 
 ### Taskliste
