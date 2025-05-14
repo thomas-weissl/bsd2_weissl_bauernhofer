@@ -17,15 +17,15 @@ Die Zip-Datei einfach herunterladen, anschließend die Datei entpacken & in eine
 
 ### Taskliste
 
-[x] Thomas: Branch maven 
-[x] Simi: Branch readme
-[x] Thomas: Branch maven_detail
-[x] Simi: Branch bug_hunt
-[ ] Simi: Branch drink
-[ ] Thomas/Simi: Branch queue
-[ ] Simi: Branch javadoc
-[ ] Thomas: Branch tests
-[ ] Thomas: Branch maven_site
+- [x] Thomas: Branch maven 
+- [x] Simi: Branch readme
+- [x] Thomas: Branch maven_detail
+- [x] Simi: Branch bug_hunt
+- [ ] Simi: Branch drink
+- [ ] Thomas/Simi: Branch queue
+- [ ] Simi: Branch javadoc
+- [ ] Thomas: Branch tests
+- [ ] Thomas: Branch maven_site
 
 ### Lizenz
 **freie Software!**
