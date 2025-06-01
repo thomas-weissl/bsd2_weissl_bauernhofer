@@ -24,7 +24,7 @@ Die Zip-Datei einfach herunterladen, anschließend die Datei entpacken & in eine
 - [x] Simi: Branch drink
 - [x] Thomas/Simi: Branch queue
 - [x] Simi: Branch javadoc
-- [ ] Thomas: Branch tests
+- [X] Thomas: Branch tests
 - [ ] Thomas: Branch maven_site
 
 ### Lizenz
