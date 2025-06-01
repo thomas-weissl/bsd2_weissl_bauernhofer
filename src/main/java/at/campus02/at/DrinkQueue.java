@@ -44,11 +44,14 @@ public class DrinkQueue implements IDrinkQueue {
 
     @Override
     public Drink peek() {
-        return null;
+        if (elements.isEmpty()) return null;
+        return elements.get(0);
     }
 
     @Override
     public Drink element() {
-        return null;
+        if (elements.isEmpty())
+            throw new NoSuchElementException("Queue is empty");
+        return elements.get(0);
     }
 }
