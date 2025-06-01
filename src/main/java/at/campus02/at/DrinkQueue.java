@@ -4,14 +4,34 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * A queue implementation for Drink objects with a fixed maximum size
+ */
 public class DrinkQueue implements IDrinkQueue {
+    /**
+     * Internal list to stroe Drink objects
+     */
     private List<Drink> elements = new ArrayList<Drink>();
+
+    /**
+     * The maximum number of elements allowed in the queue
+     */
     private int maxSize = 5;
 
-    public DrinkQueue(int maxsize) {
-        maxSize = maxSize;
+    /**
+     * Constructs a DrinkQueue with a custom maximum size
+     * @param maxSize the maximum number of elements in the queue
+     */
+    public DrinkQueue(int maxSize) {
+        this.maxSize = maxSize; //fixed
     }
 
+    /**
+     * Adds a Drink object to the end of the queue if the maximum size is not exceeded
+     *
+     * @param obj the Drink to be added
+     * @return true if successfully added, false if queue is full
+     */
     @Override
     public boolean offer(Drink obj) {
         if (elements.size() != maxSize)
@@ -22,6 +42,11 @@ public class DrinkQueue implements IDrinkQueue {
         return true;
     }
 
+    /**
+     * Retrieves and removes the first Drink in the queue
+     *
+     * @return the first Drink, or null if the queue is empty
+     */
     @Override
     public Drink poll() {
         Drink element = peek();
@@ -33,6 +58,13 @@ public class DrinkQueue implements IDrinkQueue {
         return element;
     }
 
+    /**
+     * Retrieves and removes the first Drink in the queue
+     * Throws an exception if the queue is empty
+     *
+     * @return the first Drink in the queue
+     * @throws NoSuchElementException if the queue is empty
+     */
     @Override
     public Drink remove() {
         Drink element = poll();
@@ -42,11 +74,23 @@ public class DrinkQueue implements IDrinkQueue {
         return element;
     }
 
+    /**
+     * Retrieves, but does not remove, the first Drink in the queue
+     *
+     * @return the first Drink, or null if the queue is empty
+     */
     @Override
     public Drink peek() {
         return null;
     }
 
+    /**
+     * Retrieves, but does not remove, the first Drink in the queue
+     * Throws an exception if the queue is empty
+     *
+     * @return the first Drink in the queue
+     * @throws NoSuchElementException if the queue is empty
+     */
     @Override
     public Drink element() {
         return null;

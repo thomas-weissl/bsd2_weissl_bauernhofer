@@ -1,35 +1,49 @@
 package at.campus02.at;
 
-// fastly written (not really nice) comments you should adapt
+import java.util.NoSuchElementException;
+
+/**
+ * A queue implementation for Drink objects with a fixed maximum size
+ */
 public interface IQueue {
-  /** 
-   * I am a really bad comment
-   * 
-   * fasdfadsffdsadsf
-   * 
-   * fdsasdfadsf
-   * 
-   *  add object to queue, true if okay 
-   * 
-   * i fell asleep on my keyboard...
-   * 
-   * */ 
+
+  /**
+   * Adds a Drink object to the end of the queue if the maximum size is not exceeded
+   *
+   * @param obj the Drink to be added
+   * @return true if successfully added, false if queue is full
+   */
   public abstract boolean offer(String obj);
 
-  //returns + del 1st element; null if nothing in there
-   //
+  /**
+   * Retrieves and removes the first Drink in the queue
+   *
+   * @return the first Drink, or null if the queue is empty
+   */
   public abstract String poll();
 
-  /* 
-  same as poll, if there is nothing in there error NoSuchElementException
+  /**
+   * Retrieves and removes the first Drink in the queue
+   * Throws an exception if the queue is empty
+   *
+   * @return the first Drink in the queue
+   * @throws NoSuchElementException if the queue is empty
    */
   public abstract String remove();
 
-  // 1st element without dlete, otherwise null
-   
+  /**
+   * Retrieves, but does not remove, the first Drink in the queue
+   *
+   * @return the first Drink, or null if the queue is empty
+   */
   public abstract String peek();
 
-  // element is to peek what remove is to poll
-  
+  /**
+   * Retrieves, but does not remove, the first Drink in the queue
+   * Throws an exception if the queue is empty
+   *
+   * @return the first Drink in the queue
+   * @throws NoSuchElementException if the queue is empty
+   */
   public abstract String element();
 }

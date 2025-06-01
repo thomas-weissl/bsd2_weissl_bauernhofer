@@ -1,35 +1,50 @@
 package at.campus02.at;
 
+import java.util.NoSuchElementException;
+
+/**
+ * A queue implementation for Drink objects with a fixed maximum size
+ */
 public interface IDrinkQueue {
+
     /**
-     * I am a really bad comment
+     * Adds a Drink object to the end of the queue if the maximum size is not exceeded
      *
-     * fasdfadsffdsadsf
-     *
-     * fdsasdfadsf
-     *
-     *  add object to queue, true if okay
-     *
-     * i fell asleep on my keyboard...
-     *
-     * */
+     * @param obj the Drink to be added
+     * @return true if successfully added, false if queue is full
+     */
     public abstract boolean offer(Drink obj);
 
-    //returns + del 1st element; null if nothing in there
-    //
+    /**
+     * Retrieves and removes the first Drink in the queue
+     *
+     * @return the first Drink, or null if the queue is empty
+     */
     public abstract Drink poll();
 
-    /*
-    same as poll, if there is nothing in there error NoSuchElementException
+    /**
+     * Retrieves and removes the first Drink in the queue
+     * Throws an exception if the queue is empty
+     *
+     * @return the first Drink in the queue
+     * @throws NoSuchElementException if the queue is empty
      */
     public abstract Drink remove();
 
-    // 1st element without dlete, otherwise null
-
+    /**
+     * Retrieves, but does not remove, the first Drink in the queue
+     *
+     * @return the first Drink, or null if the queue is empty
+     */
     public abstract Drink peek();
 
-    // element is to peek what remove is to poll
-
+    /**
+     * Retrieves, but does not remove, the first Drink in the queue
+     * Throws an exception if the queue is empty
+     *
+     * @return the first Drink in the queue
+     * @throws NoSuchElementException if the queue is empty
+     */
     public abstract Drink element();
 
 }

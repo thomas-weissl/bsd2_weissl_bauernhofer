@@ -1,13 +1,16 @@
 package at.campus02.at;
+
 /**
  * Class represents a simple drink liquid which can be used in
  * drinks
  */
 public class SimpleDrink extends Drink{
+
     /**
      * uses only one liquid
      */
     protected Liquid l;
+
     /**
      * Creates a SimpleDrink object with given age and
      * liquid
@@ -15,7 +18,7 @@ public class SimpleDrink extends Drink{
      * @param name name of drink
      * @param l only liquid in drink
      */
-    SimpleDrink(String name, Liquid l){
+    public SimpleDrink(String name, Liquid l){
         super(name);
         this.l = l;
     }
@@ -39,6 +42,7 @@ public class SimpleDrink extends Drink{
     public double getAlcoholPercent() {
         return l.getAlcoholPercent();
     }
+
     /**
      * Gives information if drink is alcoholic or not
      *
