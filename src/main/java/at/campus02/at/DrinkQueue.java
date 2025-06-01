@@ -51,7 +51,7 @@ public class DrinkQueue implements IDrinkQueue {
     public Drink poll() {
         Drink element = peek();
 
-        if (elements.size() == 0) {
+        if (elements.size() != 0) {
             elements.remove(0);
         }
 
