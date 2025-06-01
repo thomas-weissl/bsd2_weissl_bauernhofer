@@ -23,7 +23,7 @@ Die Zip-Datei einfach herunterladen, anschließend die Datei entpacken & in eine
 - [x] Simi: Branch bug_hunt
 - [x] Simi: Branch drink
 - [x] Thomas/Simi: Branch queue
-- [ ] Simi: Branch javadoc
+- [x] Simi: Branch javadoc
 - [ ] Thomas: Branch tests
 - [ ] Thomas: Branch maven_site
 
